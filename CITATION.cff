@@ -9,6 +9,8 @@ authors:
     given-names: Beniamin
   - family-names: Dragomir
     given-names: Andrei-Călin
+  - family-names: Stoica-Buracinschi
+    given-names: Florin
 version: 1.0.0
 license: MIT
 repository-code: 'https://github.com/SBFlorin/GenAI-ViP-frontend'
