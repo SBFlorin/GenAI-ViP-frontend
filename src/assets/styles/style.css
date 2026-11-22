@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+/* App-wide light theme for readability */
+html {
+    color-scheme: light;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Roboto', 'Arial', sans-serif;
+}
+
+#app {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.header, .footer, .page-container {
+    width: calc(100%);
+    max-width: 1440px;
+}
+
+.header, .page-container {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header {
+    flex-direction: column;
+}
+
+.row1 {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.row1 .breadcrumb {
+    padding: 0;
+}
+
+.row2 {
+    display: flex;
+    gap: 4px;
+    justify-content: stretch;
+}
+
+.breadcrumb .p-breadcrumb-list {
+    gap: 0;
+}
+
+.breadcrumb .active-link, .breadcrumb .p-breadcrumb-separator {
+    color: #000;
+}
+
+.page-container {
+    flex: auto;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* PrimeVue surfaces — keep dialogs and inputs readable in light mode */
+.p-dialog,
+.p-dialog .p-dialog-header,
+.p-dialog .p-dialog-content,
+.p-dialog .p-dialog-footer {
+    background: #ffffff;
+    color: #000000;
+}
+
+.p-inputtext,
+.p-textarea,
+.p-password-input,
+.p-select-label {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.p-inputtext::placeholder,
+.p-textarea::placeholder {
+    color: #6b7280 !important;
+}
+
+.inactive-link {
+    color: #000000;
+}
+
+.footer {
+    border-top: 1px dashed #000;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10px
+}
+
+.footer .copyright {
+    font-size: 12px;
+}
+
+.info {
+    font-size: 16px;
+}
+
+.title {
+    font-size: 20px;
+    color: #2F5597;
+}
+
+.admin .title {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+.pi {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+}

@@ -1,0 +1,219 @@
+/* Evaluator study — simple university palette: blue, white, black */
+.evaluator-page {
+  --eval-blue: #2f5597;
+  --eval-blue-light: #bdd7ee;
+  --eval-white: #ffffff;
+  --eval-black: #000000;
+  --eval-input-bg: #ffffff;
+
+  /* PrimeVue Aura tokens — light fields, black text */
+  --p-inputtext-background: var(--eval-input-bg);
+  --p-inputtext-color: var(--eval-black);
+  --p-inputtext-border-color: var(--eval-blue);
+  --p-inputtext-focus-border-color: var(--eval-blue);
+  --p-inputtext-placeholder-color: var(--eval-black);
+  --p-textarea-background: var(--eval-input-bg);
+  --p-textarea-color: var(--eval-black);
+  --p-textarea-border-color: var(--eval-blue);
+  --p-textarea-focus-border-color: var(--eval-blue);
+  --p-textarea-placeholder-color: var(--eval-black);
+
+  color-scheme: light;
+  flex-direction: column;
+  align-items: stretch;
+  background: var(--eval-blue-light);
+  color: var(--eval-black);
+  min-height: calc(100vh - 180px);
+  padding-bottom: 2rem;
+}
+
+.evaluator-page .evaluator-card {
+  background: var(--eval-white);
+  color: var(--eval-black);
+  border: 2px solid var(--eval-blue);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.evaluator-page .evaluator-muted,
+.evaluator-page .evaluator-subtle {
+  color: var(--eval-black);
+  font-size: 0.9rem;
+}
+
+.evaluator-page .evaluator-subtle {
+  font-size: 0.875rem;
+}
+
+.evaluator-page .form-title,
+.evaluator-page .study-title {
+  color: var(--eval-black);
+  font-weight: 700;
+}
+
+.evaluator-page .session-step {
+  color: var(--eval-blue);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Text fields: light background, black text (PrimeVue + native) */
+.evaluator-page .eval-field,
+.evaluator-page .eval-field.p-inputtext,
+.evaluator-page .eval-field.p-textarea,
+.evaluator-page .p-inputtext,
+.evaluator-page .p-textarea,
+.evaluator-page input.p-inputtext,
+.evaluator-page textarea.p-textarea,
+.evaluator-page .p-inputwrapper input,
+.evaluator-page .p-textarea textarea,
+.evaluator-page .evaluator-form input[type='text'],
+.evaluator-page .evaluator-form textarea {
+  background-color: var(--eval-input-bg) !important;
+  background: var(--eval-input-bg) !important;
+  color: var(--eval-black) !important;
+  -webkit-text-fill-color: var(--eval-black) !important;
+  border: 1px solid var(--eval-blue) !important;
+  box-shadow: none !important;
+}
+
+.evaluator-page .p-inputtext:enabled:hover,
+.evaluator-page .p-textarea:enabled:hover,
+.evaluator-page input.p-inputtext:enabled:hover,
+.evaluator-page textarea.p-textarea:enabled:hover {
+  background-color: var(--eval-input-bg) !important;
+  color: var(--eval-black) !important;
+  border-color: var(--eval-blue) !important;
+}
+
+.evaluator-page .p-inputtext:enabled:focus,
+.evaluator-page .p-textarea:enabled:focus,
+.evaluator-page input.p-inputtext:enabled:focus,
+.evaluator-page textarea.p-textarea:enabled:focus {
+  background-color: var(--eval-input-bg) !important;
+  color: var(--eval-black) !important;
+  border-color: var(--eval-blue) !important;
+  outline: 2px solid var(--eval-blue-light);
+  outline-offset: 1px;
+}
+
+.evaluator-page .p-inputtext::placeholder,
+.evaluator-page .p-textarea::placeholder,
+.evaluator-page input.p-inputtext::placeholder,
+.evaluator-page textarea.p-textarea::placeholder {
+  color: var(--eval-black) !important;
+  opacity: 0.5;
+}
+
+.evaluator-page .p-inputtext[readonly],
+.evaluator-page input.p-inputtext[readonly] {
+  background-color: var(--eval-blue-light) !important;
+  color: var(--eval-black) !important;
+}
+
+.evaluator-page .p-inputtext:disabled,
+.evaluator-page .p-textarea:disabled {
+  background-color: var(--eval-blue-light) !important;
+  color: var(--eval-black) !important;
+  opacity: 0.85;
+}
+
+/* Primary buttons: blue background, white label */
+.evaluator-page .p-button:not(.p-button-outlined):not(.p-button-text) {
+  background: var(--eval-blue) !important;
+  border-color: var(--eval-blue) !important;
+  color: var(--eval-white) !important;
+}
+
+.evaluator-page .p-button:not(.p-button-outlined):not(.p-button-text):disabled {
+  opacity: 0.5;
+}
+
+/* Outlined / secondary: white bg, blue border, black text */
+.evaluator-page .p-button.p-button-outlined {
+  background: var(--eval-white) !important;
+  border: 2px solid var(--eval-blue) !important;
+  color: var(--eval-black) !important;
+}
+
+.evaluator-page label,
+.evaluator-page h1,
+.evaluator-page h2,
+.evaluator-page h3,
+.evaluator-page .field-group label,
+.evaluator-page .likert-label {
+  color: var(--eval-black);
+}
+
+.evaluator-page .likert-section {
+  border-bottom: 1px solid var(--eval-blue);
+}
+
+.evaluator-page .error-block {
+  background: var(--eval-white);
+  border: 1px solid var(--eval-blue);
+}
+
+.evaluator-page .error-text {
+  color: var(--eval-black);
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* Radio / checkbox */
+.evaluator-page .p-radiobutton .p-radiobutton-box,
+.evaluator-page .p-checkbox .p-checkbox-box {
+  border-color: var(--eval-blue) !important;
+  background: var(--eval-input-bg) !important;
+}
+
+.evaluator-page .p-radiobutton-checked .p-radiobutton-box,
+.evaluator-page .p-checkbox-checked .p-checkbox-box {
+  background: var(--eval-blue) !important;
+  border-color: var(--eval-blue) !important;
+}
+
+/* Chat (shared classes used in EvaluatorChatPanel) */
+.evaluator-page .eval-chat-messages {
+  background: var(--eval-white);
+  border: 2px solid var(--eval-blue);
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 320px;
+  max-height: 440px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.evaluator-page .eval-bubble-user {
+  background: var(--eval-blue);
+  color: var(--eval-white);
+}
+
+.evaluator-page .eval-bubble-ai {
+  background: var(--eval-white);
+  color: var(--eval-black);
+  border: 2px solid var(--eval-blue);
+}
+
+.evaluator-page .eval-bubble-system {
+  background: var(--eval-blue-light);
+  color: var(--eval-black);
+  border: 2px solid var(--eval-blue);
+}
+
+.evaluator-page .eval-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border: 2px solid var(--eval-blue);
+  background: var(--eval-white);
+  color: var(--eval-black);
+}
+
+.evaluator-page .eval-badge--on {
+  background: var(--eval-blue);
+  color: var(--eval-white);
+}

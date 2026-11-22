@@ -1,0 +1,151 @@
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.p-iconfield {
+    position: relative;
+    display: block;
+}
+
+.p-inputicon {
+    position: absolute;
+    top: 50%;
+    margin-top: calc(-1 * (1rem / 2));
+    color: #94a3b8;
+    line-height: 1;
+    z-index: 1;
+}
+
+.pi {
+    font-size: 1rem;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-family: primeicons;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+}
+
+.pi-spin {
+    animation: fa-spin 2s linear infinite;
+}
+
+.runner {
+    background-image: url("@/assets/icons/runner_black.svg");
+}
+
+.medic {
+    background-image: url("@/assets/icons/medic-light-blue.svg");
+}
+
+.medic-dark-blue {
+    background-image: url("@/assets/icons/medic-dark-blue.svg");
+}
+
+.active .medic,
+.header-button:hover .medic {
+    background-image: url("@/assets/icons/medic-dark-blue.svg");
+}
+
+.cog {
+    background-image: url("@/assets/icons/cog-light-blue.svg");
+}
+
+.active .cog,
+.header-button:hover .cog {
+    background-image: url("@/assets/icons/cog-dark-blue.svg");
+}
+
+.informare {
+    background-image: url("@/assets/icons/informare-light-blue.svg");
+}
+
+.active .informare,
+.header-button:hover .informare {
+    background-image: url("@/assets/icons/informare-dark-blue.svg");
+}
+
+.speed {
+    background-image: url("@/assets/icons/speed-light-blue.svg");
+}
+
+.active .speed,
+.header-button:hover .speed {
+    background-image: url("@/assets/icons/speed-dark-blue.svg");
+}
+
+.cycle {
+    background-image: url("@/assets/icons/cycle-light-blue.svg");
+}
+
+.active .cycle:hover {
+    background-image: url("@/assets/icons/cycle-gray.svg");
+}
+
+.active .cycle,
+.header-button:hover .cycle {
+    background-image: url("@/assets/icons/cycle-dark-blue.svg");
+}
+
+.enter-black {
+    background-image: url("@/assets/icons/enter-black.svg");
+}
+
+.enter-black:hover {
+    background-image: url("@/assets/icons/enter-dark-blue.svg");
+}
+
+.wrench {
+    background-image: url("@/assets/icons/wrench-light-blue.svg");
+}
+
+.wrench-dark-blue {
+    background-image: url("@/assets/icons/wrench-dark-blue.svg");
+}
+
+.active .wrench,
+.header-button:hover .wrench {
+    background-image: url("@/assets/icons/wrench-dark-blue.svg");
+}
+
+.grid {
+    background-image: url("@/assets/icons/grid-light-blue.svg");
+}
+
+.grid-dark-blue {
+    background-image: url("@/assets/icons/grid-dark-blue.svg");
+}
+
+.active .grid,
+.header-button:hover .grid {
+    background-image: url("@/assets/icons/grid-dark-blue.svg");
+}
+
+.graph {
+    background-image: url("@/assets/icons/graph-light-blue.svg");
+}
+
+.graph-dark-blue {
+    background-image: url("@/assets/icons/graph-dark-blue.svg");
+}
+
+.active .graph,
+.header-button:hover .graph {
+    background-image: url("@/assets/icons/graph-dark-blue.svg");
+}
+
+@keyframes fa-spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
