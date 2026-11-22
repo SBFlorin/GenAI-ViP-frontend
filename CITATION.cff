@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite the corresponding archived release of
+  GenAI-ViP frontend.
+type: software
+title: 'GenAI-ViP (PaVIAGen): Frontend'
+authors:
+  - family-names: Ganea
+    given-names: Beniamin
+  - family-names: Dragomir
+    given-names: Andrei-Călin
+version: 1.0.0
+license: MIT
+repository-code: 'https://github.com/SBFlorin/GenAI-ViP-frontend'
+abstract: >-
+  Web frontend for the GenAI-ViP educational virtual-patient platform for
+  smoking-cessation counseling training. This distribution is based on the
+  pre-Study-5 implementation.
+keywords:
+  - virtual patient
+  - smoking cessation
+  - medical education
+  - generative artificial intelligence
