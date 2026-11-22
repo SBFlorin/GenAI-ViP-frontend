@@ -22,6 +22,7 @@ Start Vite on a normal unprivileged port:
 npx vite --host 127.0.0.1 --port 5173
 ```
 
+Open **http://localhost:5173**. `npm run dev` uses port 5173 in this distribution. For a production bundle:
 
 ```bash
 npm run build
@@ -62,8 +63,10 @@ This October 2026 source snapshot includes a voice interface, but not the later 
 
 ## Security and availability
 
+Do not deploy against a shared production backend without reviewing authentication, Socket.IO conversation authorization, data protection, and secure transport. Never commit personal data or credentials. The software rights holder authorized public distribution of the released source code under the **MIT License** (see `LICENSE`). Separately licensed third-party assets, if any, remain governed by their own license terms.
 
 A clean frontend build was not executed while preparing this documentation.
 
 ## Source provenance
 
+The public v1.0.0 release was prepared as a clean export of frontend source commit `d270a4e` (10 October 2026), with release-only configuration patches. Original Git history is not included. Its partner backend is the clean export of `ce163c6`. The research collection used the earlier frontend commit `a6401d3`.
